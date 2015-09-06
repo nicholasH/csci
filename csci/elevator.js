@@ -1,0 +1,209 @@
+challenge 1
+
+{
+    init: function(elevators, floors) {
+        var elevator = elevators[0]; // Let's use the first elevator
+
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        elevator.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator.goToFloor(0);
+            elevator.goToFloor(1);
+            elevator.goToFloor(2);
+        });
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
+challenge 2
+
+{
+    init: function(elevators, floors) {
+        var elevator = elevators[0]; // Let's use the first elevator
+
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        elevator.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator.goToFloor(0);
+            elevator.goToFloor(1);
+            elevator.goToFloor(2);
+            elevator.goToFloor(3);
+            elevator.goToFloor(4);
+
+
+            
+        });
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
+
+challenge 3
+
+{
+    init: function(elevators, floors) {
+        var elevator = elevators[0]; // Let's use the first elevator
+
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        elevator.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator.goToFloor(0);
+            elevator.goToFloor(1);
+            elevator.goToFloor(2);
+            elevator.goToFloor(3);
+            elevator.goToFloor(4);
+
+
+            
+        });
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
+
+challenge 4
+
+{
+    init: function(elevators, floors) {
+        var elevator0 = elevators[0]; // Let's use the first elevator
+        var elevator1 = elevators[1];
+        
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        elevator0.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator0.goToFloor(0);
+
+            
+        });
+        
+        elevator0.on("floor_button_pressed", function(floorNum) {
+            elevator0.goToFloor(floorNum);
+        })
+        
+        
+        
+        elevator1.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator1.goToFloor(0);
+
+
+        });
+        
+        elevator1.on("floor_button_pressed", function(floorNum) {
+            elevator1.goToFloor(floorNum);
+        })
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
+challenge 5
+{
+    init: function(elevators, floors) {
+        var elevator0 = elevators[0]; // Let's use the first elevator
+        var elevator1 = elevators[1];
+        var elevator2 = elevators[2];
+        var elevator3 = elevators[3];
+        
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        elevator0.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator0.goToFloor(0);
+
+            
+        });
+        
+        elevator0.on("floor_button_pressed", function(floorNum) {
+            elevator0.goToFloor(floorNum);
+        })
+        
+        
+        
+        elevator1.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator1.goToFloor(0);
+
+
+        });
+        
+        elevator1.on("floor_button_pressed", function(floorNum) {
+            elevator1.goToFloor(floorNum);
+        })
+        
+        elevator2.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator2.goToFloor(0);
+
+
+        });
+
+        elevator2.on("floor_button_pressed", function(floorNum) {
+            elevator2.goToFloor(floorNum);
+        })
+        
+        elevator3.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator3.goToFloor(0);
+
+
+        });
+
+        elevator3.on("floor_button_pressed", function(floorNum) {
+            elevator3.goToFloor(floorNum);
+        })
+
+
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
+challenge 6
+
+{
+    init: function(elevators, floors) {
+        var elevator0 = elevators[0]; // Let's use the first elevator
+        var elevator1 = elevators[1];
+
+        
+        // Whenever the elevator is idle (has no more queued destinations) ...
+        elevator0.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+            elevator0.goToFloor(0);
+
+            
+        });
+        
+        elevator0.on("floor_button_pressed", function(floorNum) {
+            elevator0.goToFloor(floorNum);
+        })
+        
+        
+        
+        elevator1.on("idle", function() {
+            // let's go to all the floors (or did we forget one?)
+          
+
+
+        });
+        
+        elevator1.on("floor_button_pressed", function(floorNum) {
+           
+        })
+
+
+
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
